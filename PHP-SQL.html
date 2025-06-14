@@ -9,6 +9,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <style>
+      .acc-header {
+        background: radial-gradient(
+          circle,
+          rgb(148, 207, 67),
+          rgb(0, 157, 224)
+        );
+      }
+
+      .acc-header:hover {
+        background-color: rgb(44, 44, 211);
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar">
@@ -75,6 +88,24 @@
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
+      </section>
+      <section class="acc-section">
+        <div class="acc">
+          <div class="acc-item">
+            <button class="acc-header">Introduction to PHP & SQL</button>
+            <div class="acc-content"><p>Content for section 1</p></div>
+          </div>
+
+          <div class="acc-item">
+            <button class="acc-header">Installation</button>
+            <div class="acc-content"><p>Installation</p></div>
+          </div>
+
+          <div class="acc-item">
+            <button class="acc-header">Syntax & Comments</button>
+            <div class="acc-content"><p>Syntax & comments</p></div>
+          </div>
+        </div>
       </section>
     </div>
   </body>
