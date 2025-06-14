@@ -143,6 +143,47 @@
   z-index: 2;
 }
 
+.acc-section {
+  padding-bottom: 5rem;
+}
+
+.acc {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding-bottom: 5rem;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.acc-header {
+  width: 100%;
+  text-align: left;
+  padding: 35px;
+  font-size: 35px;
+  font-weight: bold;
+  border: none;
+  background-color: rgb(255, 228, 115);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.acc-header:hover {
+  background-color: rgb(220, 188, 59);
+}
+
+.acc-content {
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 25px;
+}
+
+.acc-content p {
+  margin: 25px 0;
+  font-size: 23px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* Phone view */
 @media (max-width: 768px) {
   .logo {
