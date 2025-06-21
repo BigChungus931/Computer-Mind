@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VS Code JavaScript Learning Interface</title>
+  </head>
+  <body>
+    <div class="vscode-container">
+      <div class="title-bar">
+        <span>JavaScript Learning Environment</span>
+        <div class="window-controls">
+          <div class="control minimize"></div>
+          <div class="control maximize"></div>
+          <div class="control close"></div>
+        </div>
+      </div>
+
+      <div class="tab-bar">
+        <button class="tab active">
+          <div class="file-icon"></div>
+          main.js
+        </button>
+      </div>
+
+      <div class="editor-container">
+        <div class="line-numbers" id="lineNumbers">1</div>
+        <textarea
+          class="code-editor"
+          id="codeEditor"
+          placeholder="// Start writing your JavaScript code here...
+// Try: console.log('Hello, World!');
+
+"
+        >
+// JavaScript Learning Snippet
+// Try running this code!
+
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+
+const user = 'Coder';
+console.log(greet(user));
+
+// Modify the code above!</textarea
+        >
+      </div>
+
+      <button class="run-button" onclick="runCode()">▶ Run Code</button>
+
+      <div class="output-panel" id="outputPanel">
+        <div class="output-header">OUTPUT</div>
+        <div class="output-content" id="outputContent"></div>
+      </div>
+
+      <div class="status-bar">
+        <span>JavaScript</span>
+        <span>Ln 1, Col 1</span>
+      </div>
+    </div>
+  </body>
+</html>
