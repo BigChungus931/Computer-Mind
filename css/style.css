@@ -3,13 +3,22 @@
 }
 
 [data-theme="dark"] {
-  --nav-color: black !important;
-  --side-bar: black;
+  --nav-color: #020409 !important;
+  --side-bar: rgb(15, 17, 23);
+  --border-color: rgb(49, 52, 61);
+  --font-color: whitesmoke;
+  --body-color: var(--side-bar);
 }
 
 [data-theme="light"] {
   --nav-color: whitesmoke !important;
   --side-bar: rgb(0, 31, 43);
+  --font-color: black;
+  --body-color: white;
+}
+
+body {
+  background-color: var(--body-color);
 }
 
 .navbar {
@@ -24,6 +33,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 3px solid var(--border-color);
 }
 
 .logo {
@@ -37,6 +47,7 @@
   position: fixed;
   margin-top: 200px;
   transition: transform 0.3s ease;
+  border-right: 3px solid var(--border-color);
 }
 
 .sidebar a {
@@ -57,9 +68,20 @@
   top: 5px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  color: var(--font-color) !important;
+}
+
 .hamburger {
   background: none;
-  color: black;
+  color: var(--font-color);
   font-size: 24px;
   border: none;
   cursor: pointer;
@@ -71,7 +93,7 @@
   position: relative;
   top: 180px;
   left: 200px;
-  width: 89%;
+  width: 90%;
   height: 800px;
 }
 
