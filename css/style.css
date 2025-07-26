@@ -8,6 +8,8 @@
   --border-color: rgb(49, 52, 61);
   --font-color: whitesmoke;
   --body-color: var(--side-bar);
+  --switch-btn-hover: rgb(240, 76, 76);
+  --switch-btn: grey;
 }
 
 [data-theme="light"] {
@@ -15,6 +17,8 @@
   --side-bar: rgb(0, 31, 43);
   --font-color: black;
   --body-color: white;
+  --switch-btn: black;
+  --switch-btn-hover: rgb(240, 76, 76);
 }
 
 body {
@@ -61,6 +65,14 @@ body {
   margin-left: 10px;
 }
 
+.hide-lg {
+  display: none !important;
+}
+
+.hide-sm {
+  display: block !important;
+}
+
 .toggle-btn {
   display: block;
   color: white;
@@ -69,17 +81,18 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
   margin-top: 35px;
-  margin-left: 10px;
-  background-color: var(--side-bar);
+  margin-right: 50px;
+  background-color: var(--switch-btn);
   border: none;
   cursor: pointer;
   border-radius: 10px;
-  transition: 0.5s;
+  transition: 0.3s;
+  z-index: 6;
 }
 
 .toggle-btn:hover {
-  background-color: rgba(255, 0, 0, 0.3);
-  transition: 0.5s;
+  background-color: var(--switch-btn-hover);
+  transition: 0.3s;
 }
 
 .sidebar svg {
@@ -284,6 +297,14 @@ li {
 
   .hamburger {
     display: block;
+  }
+
+  .hide-lg {
+    display: block !important;
+  }
+
+  .hide-sm {
+    display: none !important;
   }
 
   .main-content {

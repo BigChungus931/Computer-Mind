@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Computer Mind</title>
+    <script src="js/load.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -32,6 +33,9 @@
         alt="Computer mind logo"
       />
       <button class="hamburger" onclick="hamburgerf()">≣</button>
+      <button class="toggle-btn hide-sm" type="button" onclick="changeTheme()">
+        Switch theme
+      </button>
     </nav>
     <div class="sidebar" id="sidebar">
       <a href="index.html">
@@ -58,7 +62,7 @@
         <i class="fas fa-code"></i>
         C++</a
       >
-      <button class="toggle-btn" type="button" onclick="changeTheme()">
+      <button class="toggle-btn hide-lg" type="button" onclick="changeTheme()">
         Switch theme
       </button>
     </div>

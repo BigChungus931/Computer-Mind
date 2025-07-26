@@ -1,13 +1,3 @@
-window.addEventListener("DOMContentLoaded", () => {
-  const html = document.documentElement;
-  const img = document.getElementById("theme-image");
-  if (html.getAttribute("data-theme") === "dark") {
-    img.src = "img/darkthemelogo1.PNG";
-  } else {
-    img.src = "img/Computer-logo.PNG";
-  }
-});
-
 function hamburgerf() {
   const sidebar = document.getElementById("sidebar");
   sidebar.classList.toggle("active");
@@ -55,4 +45,5 @@ function changeTheme() {
       newTheme = "light";
   }
   html.setAttribute("data-theme", newTheme);
+  localStorage.setItem("theme", newTheme);
 }
