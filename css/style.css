@@ -8,7 +8,7 @@
   --border-color: rgb(49, 52, 61);
   --font-color: whitesmoke;
   --body-color: var(--side-bar);
-  --switch-btn-hover: rgb(240, 76, 76);
+  --switch-btn-hover: rgb(138, 138, 138);
   --switch-btn: grey;
 }
 
@@ -18,7 +18,7 @@
   --font-color: black;
   --body-color: white;
   --switch-btn: black;
-  --switch-btn-hover: rgb(240, 76, 76);
+  --switch-btn-hover: rgb(55, 55, 55);
 }
 
 body {

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Computer Mind</title>
     <script src="js/load.js"></script>
+    <link rel="stylesheet" href="bootstrap.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -55,8 +56,84 @@
     </div>
     <div class="main-content">
       <div class="background">
-        <div class="filter">
-          <h1 class="bg-title"></h1>
+        <div>
+          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="0"
+                class="active"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="3"
+              ></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img
+                  class="d-block w-100"
+                  style="height: 800px; object-fit: cover"
+                  src="img/c++2.png"
+                  alt="c++"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img
+                  class="d-block w-100"
+                  style="height: 800px; object-fit: cover"
+                  src="img/js3.jpg"
+                  alt="js"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img
+                  class="d-block w-100"
+                  style="height: 800px; object-fit: cover"
+                  src="img/sql.jpg"
+                  alt="sql"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img
+                  class="d-block w-100"
+                  style="height: 800px; object-fit: cover"
+                  src="img/webdesign.jpg"
+                  alt="web design"
+                />
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
         </div>
       </div>
 
@@ -71,3 +148,5 @@
   </body>
 </html>
 <script src="js/script.js"></script>
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
