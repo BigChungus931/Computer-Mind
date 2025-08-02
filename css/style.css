@@ -8,8 +8,10 @@
   --border-color: rgb(49, 52, 61);
   --font-color: whitesmoke;
   --body-color: var(--side-bar);
-  --switch-btn-hover: rgb(138, 138, 138);
-  --switch-btn: grey;
+  --switch-btn: #020409;
+  --switch-btn-hover: rgb(51, 51, 51);
+  --acc-font-color: white;
+  --button-color: whitesmoke;
 }
 
 [data-theme="light"] {
@@ -17,8 +19,10 @@
   --side-bar: rgb(0, 31, 43);
   --font-color: black;
   --body-color: white;
-  --switch-btn: black;
-  --switch-btn-hover: rgb(55, 55, 55);
+  --switch-btn: whitesmoke;
+  --switch-btn-hover: rgb(194, 194, 194);
+  --acc-font-color: black;
+  --button-color: black;
 }
 
 body {
@@ -75,7 +79,7 @@ body {
 
 .toggle-btn {
   display: block;
-  color: white;
+  color: var(--font-color);
   padding: 15px 20px;
   text-decoration: none;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
