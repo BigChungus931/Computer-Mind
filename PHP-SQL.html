@@ -167,18 +167,61 @@
         </p>
       </section>
       <section class="video-section">
-        <iframe
-          class="yt"
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/zsjvFFKOm3c?si=Eow1WgaUXg8oxJQE"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+        <button
+          type="button"
+          class="btn btn-lg"
+          style="background-color: rgb(200, 255, 122)"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Click to watch video
+        </button>
       </section>
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" style="max-width: 100%; width: 600px">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Watch video</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="modal-body">
+              <iframe
+                class="yt"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/zsjvFFKOm3c?si=Eow1WgaUXg8oxJQE"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <section class="acc-section">
         <div class="acc">
           <div class="acc-item">
