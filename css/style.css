@@ -59,11 +59,16 @@ body {
 }
 
 .dropdown-menu {
-  background-color: var(--font-color);
+  background-color: whitesmoke;
 }
 
 .dropdown-item {
-  color: var(--body-color) !important;
+  color: black !important;
+}
+
+.dropdown-item:hover {
+  background-color: red;
+  color: white !important;
 }
 
 .sidebar a {
